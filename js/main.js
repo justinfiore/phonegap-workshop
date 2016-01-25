@@ -14,7 +14,6 @@ var app = {
         this.employeeLiTpl = Handlebars.compile($("#employee-li-tpl").html());
         this.store = new LocalStorageStore(function() {
             $('body').html(new HomeView(self.store).render().el);
-            self.showAlert('Store Initialized', 'Info');
         });
         $('.search-key').on('keyup', $.proxy(this.findByName, this));
     }
