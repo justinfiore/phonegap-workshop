@@ -29,6 +29,7 @@ var app = {
             $('body').on('mouseup', 'a', function(event) {
                 $(event.target).removeClass('tappable-active');
             });
+            self.showAlert("Registered mouse events");
         }
     },
 
