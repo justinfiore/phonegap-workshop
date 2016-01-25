@@ -127,6 +127,11 @@ li {
     width: 100%;
 }
 
+li>a.tappable-active {
+    color: #fff;
+    background-color: #4286f5;
+}
+
 li>a {
     color: #000;
     display: block;
